@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>TECNOLOGÍAS WAN</title>
+
+
+  <!-- Minified JS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_colour">TECNOLOGÍAS WAN.</span></a></h1>
+          <h2>Resumen unidad 3.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="3.1.html">3.1</a></li>
+          <li><a href="3.2.html">3.2</a></li>
+          <li><a href="3.3.html">3.3</a></li>
+          <li><a href="3.4.html">3.4</a></li>
+          <li><a href="3.5.html">3.5</a></li>
+          <li><a href="3.6.html">3.6</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+	  <div id="sidebar_container">
+        <div class="sidebar">
+    
+        </div>
+        <div id ="indice" class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Indice</h3>
+            <ul>
+              <li><a href="#start">3.4 Tecnologías WAN: PPP, XDSL, frame relay, ISDN, ATM</li>
+              <li><a href="#pp">Tecnología PPP</a></li>
+               <li><a href="#ISDN">ISDN</a></li>
+              <li><a href="#CAP">CAP</a></li>
+              <li><a href="#DMT">DMT</a></li>
+              <li><a href="#Frame">Frame Relay</a></li>
+             
+              <li><a href="#ATM">ATM</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        
+      </div>
+        <div id="content">
+          <h1 id="start">3.4 Tecnologías WAN: PPP, XDSL, frame relay, ISDN, ATM  </h1>
+          <h2 id="pp">Tecnología PPP        </h1>
+          <p> Point-to-point Protocol. Es un protocolo de nivel de enlace estandarizado en el documento RFC 1661. Comúnmente usado para establecer una conexión directa entre dos nodos de red. Puede proveer autentificación de conexión, cifrado de transmisión (usando ECP, RFC 1968), y compresión. PPP es usado en varios tipos de redes físicas incluyendo, cable serial, línea telefónica, line troncal, telefonía celular, especializado en enlace de radio y enlace de fibra óptica como SONET. PPP también es usado en las conexiones de acceso a internet.
+          <br>  Tiene tres componentes: <br></p>
+          <ul>
+            <li> Un mecanismo de enmarcado para encapsular datagramas multiprotocolo ymanejar la detección de errores.</li>
+            <li>Un protocolo de control de enlace (LCP, Link Control Protocol)para establecer, configurar y probar la conexión de datos.          </li>
+            <li>Una familia de protocolos de control de red (NCPs, NetworkControl Protocols) para establecer y configurar los distintos protocolos denivel de red. </li>
+          </ul>
+          <img src="https://2.bp.blogspot.com/-lCXWYVnO1so/XMultCKHxRI/AAAAAAAAADA/kekjtZRUcR8_t_rwTQzdMZYXdstmUf6MwCLcBGAs/s640/ppp.jpg" alt="">
+          <h4>Función General</h2>
+            <p>En primera instancia, la PC llama al router del ISP (InternetService Provider, proveedor del servicio de Internet), a través de un módem conectado a la línea telefónica.
+              Una vez que el módem del router ha contestado el teléfono y se ha establecido una conexión física, la PC manda al router una serie de paquetes LCP en el campo de datos de uno o más marcos PPP (esto será explicado con mayor detalle más adelante). Estos paquetes y sus respuestas seleccionan los parámetros PPP por usar.</p>
+              <iframe id="svideo" width="240" height="120" src="//www.youtube.com/embed/JYpLvaeK2f4" frameborder="0" ></iframe>
+            <p>Típica mente, la PC quiere ejecutar una pila de protocolos TCP/IP, por lo que necesita una dirección IP. No hay suficientes direcciones IP para todos, por lo que normalmente cada ISP tiene un bloque de ellas y asigna dinámica mente una a cada PC que se acaba de conectar para que la use durante su sesión. Se utiliza el NCP para asignar la dirección de IP.
+              En este momento la PC ya es un host de Internet y puede enviar y recibir paquetes IP. Cuando el usuario ha terminado se usa NCP para destruir la conexión de la capa de red y liberar la dirección IP.
+              Luego se usa LCP para cancelar la conexión de la capa de enlace de datos.
+              Finalmente, la computadora indica al módem que cuelgue el teléfono, liberando la conexión de la capa física. <br>
+              PPP puede utilizarse no solo a través de líneas telefónicas de discado, sino que también pueden emplearse a través de SONET o de líneas HDL orientadas a bits.  </p>        
+              <img src="https://4.bp.blogspot.com/-Zp6amOBiM2s/XMumM2BrGyI/AAAAAAAAADI/HB3-hXwR3JUzRrSuDYNILcBdZZ829LDoQCLcBGAs/s640/pp2.jpg" alt="">
+              <h1 id="ISDN">ISDN</h1>
+              <p> Una red de área extensa (WAN) se describe mejor como una red de datos que cubre una distancia geográfica relativamente amplia. A diferencia de una LAN, que normalmente se localiza en un área relativamente pequeña, como una oficina, un edificio o un campus pequeño, una WAN suele abarcar distancias de unos pocos a miles de kilómetros.
+                Con el fin de interconectar lugares geográficamente dispersos, las empresas suelen proporcionar servicios de una compañía de telecomunicaciones, generalmente alquilar enlaces sobre una base mensual. La velocidad y el costo de estos enlaces pueden variar considerablemente, dependiendo de los requisitos de ancho de banda, las distancias a recorrer y las tecnologías disponibles.</p>
+            
+              <h2 id="CAP">CAP </h2>
+            <p>Esta modulación está basada en la Modulación en Amplitud en Cuadratura QAM. El receptor de QAM, necesita una señal de entrada que tenga la misma relación entre espectro y fase que la señal transmitida, pero las líneas telefónicas instaladas no garantizan esta calidad. La CAP es una implementación de QAM para xDSL, de bajo costo debido a su simplicidad y con una velocidad de 1.544 Mbps.
+              <br><br>
+              Son unas tecnologías de acceso punto a punto a través de la red pública, que permiten un flujo de información tanto simétrica como asimétrica y de alta velocidad.
+              </p>
+            <h2 id="DMT">DMT (DISCRETE MULTI-TONE MODULATION)        </h2>
+            <p>Es un tipo de modulación multiportadora, que elimina el problema de las altas frecuencias que aumentan considerablemente las pérdidas debido al ruido en las líneas de cobre, dividiendo el ancho de banda disponible en 256 subcanales, que son comprobados para determinar su capacidad portadora.</p>
+              <img src="https://4.bp.blogspot.com/-fyGSJRKipks/XMungqEeXUI/AAAAAAAAADc/S2ZzlT--3sIMCVcvgKH3Z1I696iKO6legCEwYBhgL/s400/DTM.png" alt="">
+            <h2 id="Frame">Frame Relay       </h2>
+              <p>Frame Relay o (Frame-mode Bearer Service) es una técnica de comunicación mediante retransmisión de tramas para redes de circuito virtual. 
+                Consiste en una forma simplificada de tecnología de conmutación de paquetes que transmite una variedad de tamaños de tramas o marcos (“frames”) para datos, perfecto para la transmisión de grandes cantidades de datos. La técnica Frame Relay se utiliza para un servicio de transmisión de voz y datos   a alta velocidad que permite la interconexión de redes de área local separadas geográficamente a un coste menor.</p>
+              <img src="https://1.bp.blogspot.com/-sbzeAiTektI/XMuxGfPhKAI/AAAAAAAAAD0/_gF9bdHC8PwENbFU5RkLTSRM-lTSh815wCLcBGAs/s400/Frame_Relay.png" alt="">
+              <h4 id="ATM">ATM </h4>
+              <p>Con esta tecnología, a fin de aprovechar al máximo la capacidad de los sistemas de transmisión, sean estos de cable o radioeléctricos, la información no es transmitida y conmutada a través de canales asignados en permanencia, sino en forma de cortos paquetes (celdas ATM) de longitud constante y que pueden ser enrutadas individualmente mediante el uso de los denominados canales virtuales ytrayectos virtuales. Son estructuras de datos de 53 bytes compuestas por dos campos principales: 1. Header, sus 5 bytes tienen tres funciones principales: identificación del canal, información para la detección de errores y si la célula es o no utilizada. </p>
+          
+            </div>
+
+        </div>      
+    </div>
+      <div id="content_footer"></div>
+        <div id="footer">
+          <p>Copyright &copy; Redes Wan | GomezFuentes</a></p>
+        </div>
+  </div>
+  <script src="accion.js"></script>
+</body>
+</html>
