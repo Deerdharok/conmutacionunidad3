@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>TECNOLOGÍAS WAN</title>
+
+
+  <!-- Minified JS library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Compiled and minified Bootstrap JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="index.html"><span class="logo_colour">TECNOLOGÍAS WAN.</span></a></h1>
+          <h2>Resumen unidad 3.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li class="selected"><a href="index.html">Home</a></li>
+          <li><a href="3.1.html">3.1</a></li>
+          <li><a href="3.2.html">3.2</a></li>
+          <li><a href="3.3.html">3.3</a></li>
+          <li><a href="3.4.html">3.4</a></li>
+          <li><a href="3.5.html">3.5</a></li>
+          <li><a href="3.6.html">3.6</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+	  <div id="sidebar_container">
+        <div class="sidebar">
+    
+        </div>
+        <div id ="indice" class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h3>Indice</h3>
+            <ul>
+              <li><a href="#start">3.3 Topologías Redes</li>
+              <li><a href="#topologias">Topologia Anillo</a></li>
+                
+                <li style="margin-left: 12px;"><a href="#estrella">Estrella</a></li>
+                <li style="margin-left: 12px;"><a href="#malla">Malla</a></li>
+                <li style="margin-left: 12px;"><a href="#pp">Punto a punto</a></li>
+                <li style="margin-left: 12px;"><a href="#anillo">Anillo</a></li>
+            </ul>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+        
+      </div>
+        <div id="content">
+          <iframe id="video" width="480px" height="280px" src="//www.youtube.com/embed/k23pMbVebKE" frameborder="0" ></iframe>
+
+          <h1 id="start">3.3 Topologías Redes WAN        </h1>
+          <p>Hecha una definición de las redes WAN y los elementos básicos que la forman podemos pasar a analizar las diferentes topologías que ella puede adoptar .Sin embargo, antes de analizar las topologías específicas que se usan para las redes WAN, sería prudente hacer una breve introducción del término topología. El término topología se divide en dos aspectos fundamentales:
+          </p>        
+            <ul>
+                <li> Topología Física</li>
+                <li>Topología Lógica</li>
+            </ul>     
+          <p>La topología física se refiere a la forma física o patrón que forman los nodos que están conectados a la red, sin especificar el tipo de dispositivo, los métodos de conectividad o las direcciones en dicha red.</p>
+          <h2 id="topologias">Topologías de los routers en una red de área amplia (WAN):</h2>  
+          <h3 id="estrella">Estrella</h3>
+          <p>En esta configuración un nodo actúa como punto central de conexión para todos los demás, permitiendo así que en caso de que exista un fallo en alguno de los cables los demás nodos no pierdan conexión con el nodo central. La principal desventaja de esta topología es que algún problema que exista en el nodo central se convierte en un desastre total para la red ya que se pierde la conexión de todos los nodos.        </p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Netzwerktopologie_Stern.png" alt="">
+          
+          <h3 id="malla">Malla</h3>
+          <p>En esta topología la esencia es buscar la interconexión de los nodos de tal manera que si uno falla los demás puedan redireccionar los datos rápida y fácilmente. Esta topología es la que más tolerancia tiene a los fallos porque es la que provee más caminos por donde puedan viajar los datos que van de un punto a otro.        </p>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Netzwerktopologie_vermascht.png" alt="">
+          <h3 id="pp">Punto a Punto        </h3>
+          <p>Esta topología cada nodo se conecta a otro a través de circuitos dedicados, es decir, canales que son arrendados por empresas o instituciones a las compañías telefónicas. Dichos canales están siempre disponibles para la comunicación entre los dos puntos.        </p>
+          <img src="https://1.bp.blogspot.com/-JMyAnrJhxaQ/UWDe0GLplKI/AAAAAAAAACg/nraM9-b8MCs/s1600/kj.jpeg" alt="">
+          <h3 id="anillo">Anillo        </h3>
+          <p>En la topología de anillo cada nodo es conectado a otros dos más formando un patrón de anillo        </p>
+          <img width="200px" height="200px" src="https://i2.wp.com/s.culturacion.com/wp-content/uploads/2014/11/figura-2.png" alt="">
+
+
+        </div>      
+    </div>
+      <div id="content_footer"></div>
+        <div id="footer">
+          <p>Copyright &copy; Redes Wan | GomezFuentes</a></p>
+        </div>
+  </div>
+  <script src="accion.js"></script>
+</body>
+</html>
